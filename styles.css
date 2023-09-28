@@ -25,6 +25,8 @@ nav {
     text-align: center;
     background-color: #3e55a0;
     padding: 10px 0;
+    justify-content:space-evenly;
+    display: flex;
 }
 
 nav a {
@@ -36,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff6600;
+    color: #113768;
 }
 
 .container {
@@ -46,6 +48,7 @@ nav a:hover {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: slideIn 1s;
+    border-radius: 10px;
 }
 
 h2 {
@@ -61,6 +64,7 @@ p {
 .portfolio-item {
     margin-bottom: 20px;
     border: 1px solid #ddd;
+    border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s ease;
 }
@@ -76,6 +80,10 @@ footer {
     color: #fff;
     padding: 10px 0;
     animation: fadeIn 1s;
+}
+
+.contact-icon {
+    width: 30px;
 }
 
 @keyframes fadeIn {
