@@ -3,18 +3,10 @@ body,html {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     user-select: none;
-    overflow-y: auto;
 }
 
-body{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+.profile, .projects{
     height: 100dvh;
-}
-
-.profile, .projects, .contacts {
-    height: 100dvh;
-    scroll-snap-align: start;
 }
 
 .profile {
@@ -41,11 +33,6 @@ body{
     flex-wrap: wrap;
     margin-top: 35dvh;
     min-width: 50dvw;
-    /* border: 1px solid #f2f0ed; */
-}
-
-.links > a {
-    /* border: 1px solid #f2f0ed; */
 }
 
 a {
@@ -56,12 +43,4 @@ a {
 a:hover {
     color: #74ADF4;
     transform: scale(1.05);
-}
-
-.projects {
-    background-color: #74ADF4;
-}
-
-.contacts {
-    background-color: #290C9A;
 }
