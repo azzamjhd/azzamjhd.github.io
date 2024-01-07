@@ -1,107 +1,67 @@
-/* Reset some default styles */
-body, h1, h2, p {
+body,html {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+    overflow-y: auto;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+body{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100dvh;
 }
 
-header {
-    background-color: #113768;
-    color: #fff;
+.profile, .projects, .contacts {
+    height: 100dvh;
+    scroll-snap-align: start;
+}
+
+.profile {
+    background-color: #020b14;
+    color: #f2f0ed;
     text-align: center;
-    padding: 20px 0;
-    animation: fadeIn 1s;
-}
-
-header h1 {
-    font-size: 2rem;
-}
-
-nav {
-    text-align: center;
-    background-color: #3e55a0;
-    padding: 10px 0;
-    justify-content:space-evenly;
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+.profile > h1 {
+    text-transform: uppercase;
+    min-width: 50dvw;
+    letter-spacing: 5px;
+    margin-top: 45dvh;
 }
 
-nav a:hover {
-    color: #113768;
+.links {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 35dvh;
+    min-width: 50dvw;
+    /* border: 1px solid #f2f0ed; */
 }
 
-.container {
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: slideIn 1s;
-    border-radius: 10px;
+.links > a {
+    /* border: 1px solid #f2f0ed; */
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+a {
+    color: #f2f0ed;
+    transition: all 0.2s ease-in-out;
 }
 
-p {
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
-.portfolio-item {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover {
+a:hover {
+    color: #74ADF4;
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    animation: fadeIn 1s;
+.projects {
+    background-color: #74ADF4;
 }
 
-.contact-icon {
-    width: 30px;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.contacts {
+    background-color: #290C9A;
 }
