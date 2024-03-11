@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container flex items-center justify-between">
+                <a href="#" class="brand">Your Logo</a>
+                <button class="navbar-toggler hidden md:hidden" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links hidden" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        /* General styles */
+        .container {
+            max-width: 1000px; /* Adjust as needed */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-toggler .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px 0;
+        }
+
+        /* Horizontal Navbar (For wider screens) */
+        @media (min-width: 768px) { 
+            .navbar-toggler {
+                display: none; /* Hide toggle button */
+            }
+            .nav-links {
+                display: flex;
+                list-style: none;
+                padding: 0;
+            }
+            .nav-links li {
+                margin: 0 15px; 
+            }
+        }
+
+        /* Vertical Navbar (For smaller screens) */
+        @media (max-width: 767px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: #fff;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transform: translateX(-100%); 
+                transition: transform 0.3s ease-in-out;
+                z-index: 10; /* Ensure it's on top */
+            }
+
+            .nav-links.show {
+                transform: translateX(0);
+            }
+        }
+
+    </style>
+
+    <script>
+        const toggleButton = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navList = document.querySelectorAll('nav div ul li');
+
+        toggleButton.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+
+        navList.forEach(li => { 
+            li.addEventListener('click', () => { 
+                navMenu.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
