@@ -1,0 +1,208 @@
+{
+  "site": {
+    "title": "Azzam Abidurrahman Mujahid",
+    "tagline": "Mechatronics Engineering",
+    "avatar": "assets/images/avatar_azzam.jpg",
+    "location": "Surabaya, Indonesia",
+    "email": "azzamujahid214@gmail.com",
+    "phone": "+62 82229469179",
+    "summary": "I am Azzam Abidurrahman Mujahid, a 20-year-old Mechatronics Engineering student at Politeknik Elektronika Negeri Surabaya (PENS). I have a strong foundation in mechanical design and component manufacturing, along with solid understanding of electronics and programming. I am a dedicated and hardworking person, driven by a commitment to deliver excellent results, and always motivated to keep learning through practical professional experience.",
+    "resumeUrl": "#",
+    "socialLinks": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/azzamjhd"
+      }
+    ]
+  },
+  "about": {
+    "intro": "I am passionate about building mechatronics systems that integrate mechanics, electronics, and software into reliable real-world solutions.",
+    "highlights": [
+      "Mechanical design and component fabrication",
+      "Electronics, microcontrollers, and control programming",
+      "Strong curiosity, fast learning, and practical execution"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Applied Science (D4), Mechatronics Engineering",
+      "organization": "Politeknik Elektronika Negeri Surabaya (PENS)",
+      "period": "July 2022 - Present",
+      "details": "Current GPA: 3.72 (2022-2026). Relevant coursework: Industrial Automation, Robotics, Programming, Microprocessors, Microcontrollers, Industrial Electrical Systems, Automatic Control, Machining, Manufacturing, Sensors and Actuators, Signals and Systems, Kinematics, Electrical Circuits, Electronic System Design, Statistics and Dynamics, Mechanical Design, CNC, Engineering Mathematics, Mechanics of Materials, Analog Electronics, and Digital Electronics."
+    },
+    {
+      "degree": "Mathematics and Natural Sciences (MIPA)",
+      "organization": "MAN Insan Cendekia Pasuruan",
+      "period": "Before 2022",
+      "details": "Relevant subjects: Mathematics and Physics."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Expert Staff, Technology Research and Social Affairs Department",
+      "organization": "HIMA MEKA",
+      "period": "September 2024 - Present",
+      "details": "Supervise work programs, take ownership of execution, prepare activity reports with evaluation and improvement recommendations, and mentor new members in organizational governance and role responsibilities."
+    },
+    {
+      "role": "Chairperson",
+      "organization": "Mechatronics Engineering Service Society Program",
+      "period": "2023 - Present",
+      "details": "Lead and oversee community service initiatives focused on technology implementation and social-impact issues."
+    },
+    {
+      "role": "Committee Member, LKMM Pre-Basic Training",
+      "organization": "HIMA MEKA",
+      "period": "2022 - 2023",
+      "details": "Prepared logistics reporting and coordinated participant consumption during the event."
+    },
+    {
+      "role": "Committee Member, LKMM Basic Training",
+      "organization": "HIMA MEKA",
+      "period": "2023 - 2024",
+      "details": "Managed event equipment and delivered material in orientation forums."
+    }
+  ],
+  "skills": {
+    "technical": [
+      "3D Design",
+      "2D Design",
+      "Laser Cutting",
+      "Lathe Machine",
+      "PLC & HMI",
+      "PID Control",
+      "Microcontroller Systems",
+      "C/C++",
+      "PCB Design"
+    ],
+    "software": [
+      "Autodesk Inventor",
+      "Autodesk Eagle",
+      "MATLAB",
+      "OnShape",
+      "KiCad"
+    ],
+    "languages": [
+      "Indonesian (Native)",
+      "Javanese (Native)",
+      "Madurese (Native)",
+      "English (Expert)",
+      "Spanish (Beginner)",
+      "Italian (Beginner)"
+    ],
+    "certifications": [
+      "Student Leadership and Management Training Pre-Basic Level (LKMM Pra-TD) - PENS (2022)",
+      "Student Leadership and Management Training Basic Level (LKMM TD) - HIMA MEKA (2023)",
+      "PENS English Proficiency Test (PEPT 2026): 520/677"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Two-Wheel Balancing Robot",
+      "category": "Robotics",
+      "description": "Designed and developed a two-wheel balancing robot covering mechanical design, electrical architecture, and control programming.",
+      "stack": [
+        "CAD",
+        "KiCad",
+        "Control System",
+        "PCB Design"
+      ],
+      "githubUrl": "#",
+      "photos": [
+        {
+          "src": "assets/images/projects/line-follower/overview.svg",
+          "alt": "Two-wheel balancing robot overview",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "src": "assets/images/projects/line-follower/electronics.svg",
+          "alt": "Balancing robot electronics and PCB",
+          "width": 1200,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "title": "Differential Drive Mobile Robot (DDMR) Dashboard GUI",
+      "category": "Software & Control",
+      "description": "Designed robot control logic, communication architecture, and dashboard GUI for system monitoring and command.",
+      "stack": [
+        "Control System",
+        "GUI",
+        "Communication Interface"
+      ],
+      "githubUrl": "#",
+      "photos": [
+        {
+          "src": "assets/images/projects/smart-greenhouse/cabinet.svg",
+          "alt": "DDMR dashboard GUI layout",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "src": "assets/images/projects/smart-greenhouse/sensors.svg",
+          "alt": "DDMR control communication flow",
+          "width": 1200,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "title": "Laser Cutting CNC Machine Design",
+      "category": "Mechanical & Electrical",
+      "description": "Designed a laser cutting CNC machine, performed machining processes, and completed mechanical-electrical assembly.",
+      "stack": [
+        "CAD",
+        "Machining",
+        "Assembly",
+        "Electrical Integration"
+      ],
+      "githubUrl": "#",
+      "photos": [
+        {
+          "src": "assets/images/projects/robot-arm/workcell.svg",
+          "alt": "Laser cutting CNC machine design and assembly",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "src": "assets/images/projects/robot-arm/gripper.svg",
+          "alt": "Laser CNC mechanical and electrical integration details",
+          "width": 1200,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "title": "PID Position Control of Motor with Propeller",
+      "category": "Control System",
+      "description": "Developed an analog PID-based position control system for a propeller motor using sensor input and setpoint tracking to achieve smooth and accurate response.",
+      "stack": [
+        "PID",
+        "Analog Control",
+        "PCB Design",
+        "Motor Control"
+      ],
+      "githubUrl": "#",
+      "photos": [
+        {
+          "src": "assets/images/projects/line-follower/electronics.svg",
+          "alt": "PID motor position control circuit and hardware",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "src": "assets/images/projects/line-follower/overview.svg",
+          "alt": "Motor response behavior based on setpoint",
+          "width": 1200,
+          "height": 800
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "email": "azzamujahid214@gmail.com",
+    "message": "Open to internship opportunities, mechatronics project collaborations, and technical discussions in design, control, and robotics systems."
+  }
+}

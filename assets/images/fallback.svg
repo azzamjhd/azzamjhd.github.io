@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Fallback project image">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e6f2ff"/>
+      <stop offset="100%" stop-color="#d4f0e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <g stroke="#134074" stroke-width="6" fill="none" opacity="0.55">
+    <path d="M120 650h960"/>
+    <path d="M120 560h960"/>
+    <path d="M120 470h960"/>
+  </g>
+  <g fill="#0b2545" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="355" font-size="68" font-weight="700">Project Image Not Found</text>
+    <text x="600" y="420" font-size="34">Check your path in assets/config.json</text>
+  </g>
+</svg>

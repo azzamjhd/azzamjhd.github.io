@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Greenhouse sensor photo placeholder">
+  <rect width="1200" height="800" fill="#edfdf2"/>
+  <rect x="90" y="430" width="1020" height="260" rx="20" fill="#5a7d4f"/>
+  <g>
+    <rect x="220" y="250" width="170" height="280" rx="18" fill="#f2f0ed"/>
+    <rect x="515" y="210" width="170" height="320" rx="18" fill="#f2f0ed"/>
+    <rect x="810" y="270" width="170" height="260" rx="18" fill="#f2f0ed"/>
+  </g>
+  <g stroke="#0b2545" stroke-width="7">
+    <path d="M305 250v-80m295 40v-80m295 140v-80"/>
+  </g>
+  <g fill="#0b2545" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="95" font-size="52" font-weight="700">Distributed Sensor Nodes</text>
+    <text x="600" y="740" font-size="32">Temperature • Humidity • Soil Moisture</text>
+  </g>
+</svg>

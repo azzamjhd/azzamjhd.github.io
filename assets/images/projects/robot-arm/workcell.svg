@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Robot arm workcell photo placeholder">
+  <rect width="1200" height="800" fill="#f4f8ff"/>
+  <rect x="120" y="520" width="960" height="120" rx="18" fill="#bcccdc"/>
+  <rect x="220" y="430" width="170" height="90" rx="12" fill="#8da2b8"/>
+  <rect x="820" y="430" width="170" height="90" rx="12" fill="#8da2b8"/>
+  <g stroke="#0b2545" stroke-width="22" stroke-linecap="round" fill="none">
+    <path d="M350 500l120-140 120 70 130-120"/>
+  </g>
+  <circle cx="350" cy="500" r="38" fill="#0b2545"/>
+  <circle cx="470" cy="360" r="34" fill="#0b2545"/>
+  <circle cx="590" cy="430" r="34" fill="#0b2545"/>
+  <circle cx="720" cy="310" r="34" fill="#0b2545"/>
+  <rect x="715" y="308" width="90" height="24" rx="8" fill="#f97316"/>
+  <text x="600" y="105" fill="#0b2545" font-size="52" font-family="Arial, sans-serif" text-anchor="middle" font-weight="700">Desktop Pick-and-Place Workcell</text>
+</svg>
