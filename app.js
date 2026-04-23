@@ -207,9 +207,17 @@ function renderSidebar(site, contact) {
   document.getElementById('sidebar-title').textContent = site.tagline || 'Student';
 
   const avatar = document.getElementById('sidebar-avatar');
-  avatar.src = sanitizeUrl(site.avatar, FALLBACK_AVATAR);
+  const avatarSrc = sanitizeUrl(site.avatar, FALLBACK_AVATAR);
+  avatar.src = avatarSrc;
   avatar.alt = `${site.title || 'Profile'} avatar`;
   avatar.onerror = function () {
+    if (avatarSrc && !avatarSrc.startsWith('./')) {
+      avatar.onerror = function () {
+        avatar.src = FALLBACK_AVATAR;
+      };
+      avatar.src = `./${avatarSrc}`;
+      return;
+    }
     avatar.src = FALLBACK_AVATAR;
   };
 
@@ -316,11 +324,7 @@ function renderSkillGroup(listId, items, minPercent) {
     h5.className = 'h5';
     h5.textContent = skillName;
 
-    const data = document.createElement('data');
-    data.value = String(percent);
-    data.textContent = `${percent}%`;
-
-    wrapper.append(h5, data);
+    wrapper.append(h5);
 
     const bg = document.createElement('div');
     bg.className = 'skill-progress-bg';

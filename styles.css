@@ -336,6 +336,11 @@ main {
   border-radius: 20px;
 }
 
+.avatar-box {
+  /* contain the image and clip to the rounded corners */
+  overflow: hidden;
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
