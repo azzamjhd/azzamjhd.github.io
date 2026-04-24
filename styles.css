@@ -839,37 +839,64 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+.skills-title { 
+  margin-bottom: 10px;
+  margin-top: 20px; 
+}
 
-.skills-list { padding: 20px; }
-
-
-.skills-item:not(:last-child) { margin-bottom: 15px; }
-
-.skill .title-wrapper {
+.skills-list {
+  padding: 18px;
   display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
-}
-
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
-}
-
-.skill-progress-bg {
-  background: var(--jet);
+  flex-wrap: wrap;
+  gap: 12px;
   width: 100%;
-  height: 8px;
-  border-radius: 10px;
+  min-width: 0;
 }
 
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
-  border-radius: inherit;
+.skills-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: hsla(0, 0%, 100%, 0.05);
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+}
+
+.skills-item-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange-yellow-crayola);
+  flex: 0 0 auto;
+}
+
+.skills-item-icon ion-icon {
+  font-size: 16px;
+}
+
+.skills-item-text {
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  line-height: 1;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+#certification-skills-list .skills-item {
+  max-width: 100%;
+}
+
+#certification-skills-list .skills-item-text {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
 }
 
 
@@ -1502,10 +1529,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 8px;
     left: -43px;
   }
-
-  .skills-item:not(:last-child) { margin-bottom: 25px; }
-
-
 
   /**
    * #PORTFOLIO, BLOG

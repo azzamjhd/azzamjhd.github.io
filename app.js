@@ -303,7 +303,23 @@ function renderTimeline(listId, entries, titleKey) {
   });
 }
 
-function renderSkillGroup(listId, items, minPercent) {
+function getSkillIconName(listId) {
+  if (listId.includes('technical')) {
+    return 'hardware-chip-outline';
+  }
+
+  if (listId.includes('software')) {
+    return 'code-slash-outline';
+  }
+
+  if (listId.includes('language')) {
+    return 'chatbubble-outline';
+  }
+
+  return 'ribbon-outline';
+}
+
+function renderSkillGroup(listId, items) {
   const skillsList = document.getElementById(listId);
   if (!skillsList) {
     return;
@@ -311,29 +327,23 @@ function renderSkillGroup(listId, items, minPercent) {
 
   skillsList.innerHTML = '';
 
-  (items || []).forEach((skillName, idx) => {
-    const percent = Math.max(minPercent, 92 - (idx * 6));
+  const iconName = getSkillIconName(listId);
 
+  (items || []).forEach((skillName) => {
     const item = document.createElement('li');
     item.className = 'skills-item';
 
-    const wrapper = document.createElement('div');
-    wrapper.className = 'title-wrapper';
+    const iconBox = document.createElement('span');
+    iconBox.className = 'skills-item-icon';
+    const icon = document.createElement('ion-icon');
+    icon.setAttribute('name', iconName);
+    iconBox.append(icon);
 
-    const h5 = document.createElement('h5');
-    h5.className = 'h5';
-    h5.textContent = skillName;
+    const text = document.createElement('span');
+    text.className = 'skills-item-text';
+    text.textContent = skillName;
 
-    wrapper.append(h5);
-
-    const bg = document.createElement('div');
-    bg.className = 'skill-progress-bg';
-    const fill = document.createElement('div');
-    fill.className = 'skill-progress-fill';
-    fill.style.width = `${percent}%`;
-    bg.append(fill);
-
-    item.append(wrapper, bg);
+    item.append(iconBox, text);
     skillsList.append(item);
   });
 }
@@ -406,10 +416,10 @@ function renderResume(education, experience, skills) {
   });
 
   const groupedSkills = normalizeSkills(skills);
-  renderSkillGroup('technical-skills-list', groupedSkills.technical, 60);
-  renderSkillGroup('software-skills-list', groupedSkills.software, 58);
-  renderSkillGroup('language-skills-list', groupedSkills.languages, 62);
-  renderSkillGroup('certification-skills-list', groupedSkills.certifications, 65);
+  renderSkillGroup('technical-skills-list', groupedSkills.technical);
+  renderSkillGroup('software-skills-list', groupedSkills.software);
+  renderSkillGroup('language-skills-list', groupedSkills.languages);
+  renderSkillGroup('certification-skills-list', groupedSkills.certifications);
 }
 
 function renderPortfolio(projects) {
