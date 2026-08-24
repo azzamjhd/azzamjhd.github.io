@@ -27,13 +27,13 @@
     {
       "degree": "Bachelor of Applied Science (D4), Mechatronics Engineering",
       "organization": "Politeknik Elektronika Negeri Surabaya (PENS)",
-      "period": "July 2022 - Present",
-      "details": "Current GPA: 3.72 (2022-2026). Relevant coursework: Industrial Automation, Robotics, Programming, Microprocessors, Microcontrollers, Industrial Electrical Systems, Automatic Control, Machining, Manufacturing, Sensors and Actuators, Signals and Systems, Kinematics, Electrical Circuits, Electronic System Design, Statistics and Dynamics, Mechanical Design, CNC, Engineering Mathematics, Mechanics of Materials, Analog Electronics, and Digital Electronics."
+      "period": "July 2022 - August 2026",
+      "details": "Current GPA: 3.72/4.0. Relevant coursework: Industrial Automation, Robotics, Programming, Microprocessors, Microcontrollers, Industrial Electrical Systems, Automatic Control, Machining, Manufacturing, Sensors and Actuators, Signals and Systems, Kinematics, Electrical Circuits, Electronic System Design, Statistics and Dynamics, Mechanical Design, CNC, Engineering Mathematics, Mechanics of Materials, Analog Electronics, and Digital Electronics."
     },
     {
       "degree": "Mathematics and Natural Sciences (MIPA)",
       "organization": "MAN Insan Cendekia Pasuruan",
-      "period": "Before 2022",
+      "period": "2019 - 2022",
       "details": "Relevant subjects: Mathematics and Physics."
     }
   ],
@@ -41,13 +41,13 @@
     {
       "role": "Expert Staff, Technology Research and Social Affairs Department",
       "organization": "HIMA MEKA",
-      "period": "September 2024 - Present",
+      "period": "September 2024 - September 2025",
       "details": "Supervise work programs, take ownership of execution, prepare activity reports with evaluation and improvement recommendations, and mentor new members in organizational governance and role responsibilities."
     },
     {
-      "role": "Chairperson",
+      "role": "Head",
       "organization": "Mechatronics Engineering Service Society Program",
-      "period": "2023 - Present",
+      "period": "2023 - 2024",
       "details": "Lead and oversee community service initiatives focused on technology implementation and social-impact issues."
     },
     {
@@ -73,7 +73,8 @@
       "PID Control",
       "Microcontroller Programming",
       "C/C++",
-      "PCB Design"
+      "PCB Design",
+      "ROS2"
     ],
     "software": [
       "Autodesk Inventor",
@@ -96,6 +97,37 @@
   },
   "projects": [
     {
+      "title": "Smart Massage Machine Final Project",
+      "category": "",
+      "description": "",
+      "stack": [
+        "ROS2",
+        "Python",
+        "C++"
+      ],
+      "githubUrl": "https://github.com/azzamjhd/scanner-system",
+      "photos": [
+        {
+          "src": "assets/images/projects/scanning-result.png",
+          "alt": "3D Point Cloud and Massage Trajectory Result",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "assets/images/projects/scanning-wiring.png",
+          "alt": "Scanning System Wiring Diagram",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "assets/images/projects/scanning-whole.png",
+          "alt": "Scanning System Whole View",
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
       "title": "Two-Wheel Balancing Robot",
       "category": "Robotics",
       "description": "Designed and developed a two-wheel balancing robot covering mechanical design, electrical architecture, and control programming.",
@@ -105,17 +137,11 @@
         "Control System",
         "PCB Design"
       ],
-      "githubUrl": "#",
+      "githubUrl": "https://github.com/azzamjhd/ESP32-Racing-Balancing-Robot",
       "photos": [
         {
-          "src": "assets/images/projects/line-follower/overview.svg",
-          "alt": "Two-wheel balancing robot overview",
-          "width": 1200,
-          "height": 800
-        },
-        {
-          "src": "assets/images/projects/line-follower/electronics.svg",
-          "alt": "Balancing robot electronics and PCB",
+          "src": "assets/images/projects/balancing.jpeg",
+          "alt": "Two-wheel balancing robot design",
           "width": 1200,
           "height": 800
         }
@@ -130,17 +156,17 @@
         "GUI",
         "Communication Interface"
       ],
-      "githubUrl": "#",
+      "githubUrl": "https://github.com/azzamjhd/DDMR-GUI",
       "photos": [
         {
-          "src": "assets/images/projects/smart-greenhouse/cabinet.svg",
+          "src": "assets/images/projects/DDMR-GUI.jpeg",
           "alt": "DDMR dashboard GUI layout",
           "width": 1200,
           "height": 800
         },
         {
-          "src": "assets/images/projects/smart-greenhouse/sensors.svg",
-          "alt": "DDMR control communication flow",
+          "src": "assets/images/projects/DDMR.jpeg",
+          "alt": "DDMR dashboard GUI layout",
           "width": 1200,
           "height": 800
         }
@@ -159,14 +185,8 @@
       "githubUrl": "#",
       "photos": [
         {
-          "src": "assets/images/projects/robot-arm/workcell.svg",
-          "alt": "Laser cutting CNC machine design and assembly",
-          "width": 1200,
-          "height": 800
-        },
-        {
-          "src": "assets/images/projects/robot-arm/gripper.svg",
-          "alt": "Laser CNC mechanical and electrical integration details",
+          "src": "assets/images/projects/Laset_cutting.jpeg",
+          "alt": "Laser cutting CNC machine design",
           "width": 1200,
           "height": 800
         }
@@ -182,17 +202,11 @@
         "PCB Design",
         "Motor Control"
       ],
-      "githubUrl": "#",
+      "githubUrl": "https://github.com/azzamjhd/PID-position",
       "photos": [
         {
-          "src": "assets/images/projects/line-follower/electronics.svg",
+          "src": "assets/images/projects/pid.jpeg",
           "alt": "PID motor position control circuit and hardware",
-          "width": 1200,
-          "height": 800
-        },
-        {
-          "src": "assets/images/projects/line-follower/overview.svg",
-          "alt": "Motor response behavior based on setpoint",
           "width": 1200,
           "height": 800
         }

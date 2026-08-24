@@ -82,31 +82,13 @@
 
         <section class="timeline">
           <div class="title-wrapper">
-            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-            <h3 class="h3">Experience</h3>
+            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+            <h3 class="h3">Experience & Leadership</h3>
           </div>
           <ol class="timeline-list" id="experience-list"></ol>
         </section>
 
-        <section class="skill">
-          <h3 class="h3 skills-title">Technical Skills</h3>
-          <ul class="skills-list content-card" id="technical-skills-list"></ul>
-        </section>
-
-        <section class="skill">
-          <h3 class="h3 skills-title">Software Skills</h3>
-          <ul class="skills-list content-card" id="software-skills-list"></ul>
-        </section>
-
-        <section class="skill">
-          <h3 class="h3 skills-title">Languages</h3>
-          <ul class="skills-list content-card" id="language-skills-list"></ul>
-        </section>
-
-        <section class="skill">
-          <h3 class="h3 skills-title">Certifications</h3>
-          <ul class="skills-list content-card" id="certification-skills-list"></ul>
-        </section>
+        <div id="skills-container" class="skills-container"></div>
       </article>
 
       <article class="portfolio" data-page="portfolio">
@@ -143,10 +125,28 @@
   </main>
 
   <div class="image-preview-overlay" id="image-preview-overlay" aria-hidden="true">
-    <button class="image-preview-close" id="image-preview-close" aria-label="Close image preview">Close</button>
-    <figure class="image-preview-frame">
-      <img id="image-preview-image" class="image-preview-image" src="" alt="Preview image">
-    </figure>
+    <button class="image-preview-close" id="image-preview-close" aria-label="Close image preview">
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+    <div class="image-preview-wrapper">
+      <div class="image-preview-header">
+        <h4 id="preview-title" class="preview-title">Project Title</h4>
+        <span id="preview-counter" class="preview-counter">1 / 1</span>
+      </div>
+
+      <figure class="image-preview-frame">
+        <button class="preview-nav-btn prev" id="preview-prev-btn" aria-label="Previous photo">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+        <img id="image-preview-image" class="image-preview-image" src="" alt="Preview image">
+        <button class="preview-nav-btn next" id="preview-next-btn" aria-label="Next photo">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </figure>
+
+      <p id="preview-caption" class="preview-caption"></p>
+      <div id="preview-thumbnails" class="preview-thumbnails"></div>
+    </div>
   </div>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
